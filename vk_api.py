@@ -1,7 +1,8 @@
 from id_from_username import IdFromUsername
 from get_friends import GetFriends
 
-user = IdFromUsername('4taaa')
+username = input("Input username? ")
+user = IdFromUsername(username)
 uid = user.execute()
 
 friends = GetFriends(uid)
